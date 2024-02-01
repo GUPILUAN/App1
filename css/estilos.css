@@ -6,9 +6,77 @@ h1{
     font-variation-settings:
       "BLED" 0,
       "SCAN" 0;
-  
 }
 
+
 body{
-    background-color: blanchedalmond;
+    background-color:ghostwhite;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 80%;
+    margin:auto;
+    flex-direction: column;
+
+}
+
+.titulo
+{
+    text-align: right;
+}
+.izq{
+    text-align: right;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type = "text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #28882c;
+}
+input[type="color"] {
+    background-color: #dceadc;
+    border:  1px solid #aaa;
+    border-radius: 4px;
 }

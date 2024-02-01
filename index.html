@@ -7,11 +7,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Document</title>
+    <title>Entrega 1</title>
 </head>
 <body>
+    <div class="izq">
+        <h1 class="titulo">Pagina Web, entrega 1 </h1>
+        <h5>Realizada por Luis Angel Gutiérrez </h5>
+    </div>
+    <hr>
+    <div class="container" id="forms">
+    <form action="submit" method="post" class="formulario" >
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required><br>
     
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis magni quasi ab ut vitae et nemo assumenda dolores placeat provident, rem accusamus nobis a nihil, obcaecati suscipit neque unde.</p>
+        <label for="email">Correo Electrónico: </label>
+        <input type="email" name="email" id="email" required><br>
+    
+        <label for="genero">Género: </label>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br>
+    
+        <label for="comentarios">Comentarios: </label><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea><br>
+        <label for="color">Selecciona un color para la página: </label>
+        <input type="color" id="color" name="color" onchange="cambiarColorPagina(this.value)">
+
+        <label for="color">Selecciona un color para el formulario: </label>
+        <input type="color" id="color" name="color" onchange="cambiarColorForm(this.value)">
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+<script src="./folder 1/file1.js"></script>
+    
+
 </body>
 </html>
